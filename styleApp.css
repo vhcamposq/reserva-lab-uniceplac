@@ -1,53 +1,56 @@
-/* Estilização geral */
 body {
-  background-color: #f2f2f2;
-  font-family: Arial, sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-
-/* Estilização da seção de agendamento */
-.agendamento {
-  background-color: #ffa600;
-  padding: 1rem;
-  border-radius: 10px;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-  width: 500px;
-  max-width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-/* Estilização dos inputs */
-input[type="text"],
-input[type="date"],
-select {
-  padding: 0.8rem;
-  margin-bottom: 1rem;
-  width: 100%;
-  border: none;
-  border-radius: 5px;
-  font-size: 1.2rem;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-/* Estilização do botão de agendamento */
-button[type="submit"] {
-  background-color: #1abc9c;
-  color: white;
-  padding: 0.8rem 1.2rem;
-  border: none;
-  border-radius: 5px;
-  font-size: 1.2rem;
-  cursor: pointer;
-}
-
-/* Media query para dispositivos móveis */
-@media (max-width: 500px) {
-  .agendamento {
-    width: 90%;
+    background-color: #F3F3F3;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
   }
-}
+  
+  form {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #BBBBBB;
+    padding: 40px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  form h1 {
+    color: #444444;
+    font-size: 24px;
+    margin-bottom: 40px;
+  }
+  
+  form input[type="text"],
+  form input[type="date"],
+  form input[type="time"] {
+    background-color: #F3F3F3;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px #BBBBBB;
+    height: 50px;
+    padding: 0 20px;
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #444444;
+  }
+  
+  form input[type="submit"] {
+    background-color: #009900;
+    border: none;
+    border-radius: 5px;
+    color: #FFFFFF;
+    height: 50px;
+    width: 100%;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  form input[type="submit"]:hover {
+    background-color: #007700;
+  }
+  
