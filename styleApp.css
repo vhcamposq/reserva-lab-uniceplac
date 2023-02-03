@@ -1,0 +1,53 @@
+/* Estilização geral */
+body {
+  background-color: #f2f2f2;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Estilização da seção de agendamento */
+.agendamento {
+  background-color: #ffa600;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  width: 500px;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Estilização dos inputs */
+input[type="text"],
+input[type="date"],
+select {
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilização do botão de agendamento */
+button[type="submit"] {
+  background-color: #1abc9c;
+  color: white;
+  padding: 0.8rem 1.2rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+/* Media query para dispositivos móveis */
+@media (max-width: 500px) {
+  .agendamento {
+    width: 90%;
+  }
+}
