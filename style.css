@@ -1,0 +1,49 @@
+    /* Estilização geral */
+    body {
+        background-color: white;
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      /* Estilização do formulário */
+      form {
+        background-color: laranja;
+        padding: 1rem;
+        border-radius: 10px;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+        width: 500px;
+        max-width: 100%;
+      }
+
+      /* Estilização dos inputs */
+      input[type="text"],
+      input[type="password"] {
+        padding: 0.8rem;
+        margin-bottom: 1rem;
+        width: 100%;
+        border: none;
+        border-radius: 5px;
+        font-size: 1.2rem;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      /* Estilização do botão de login */
+      button[type="submit"] {
+        background-color: verde;
+        color: white;
+        padding: 0.8rem 1.2rem;
+        border: none;
+        border-radius: 5px;
+        font-size: 1.2rem;
+        cursor: pointer;
+      }
+
+      /* Media query para dispositivos móveis */
+      @media (max-width: 500px) {
+        form {
+          width: 90%;
+        }
+      }
