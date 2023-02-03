@@ -1,34 +1,19 @@
+ // Obtém o formulário de agendamento
+ const formAgendamento = document.querySelector("#form-agendamento");
 
-          // Verifica se o usuário está logado
-      let usuarioLogado = false;
+ // Adiciona um evento de submit ao formulário de agendamento
+ formAgendament.addEventListener("submit", function(event) {
+   event.preventDefault();
 
-// Obtém o botão de agendamento
-const btnAgendar = document.querySelector("#agendar");
+   // Obtém os dados do formulário
+   const nomeLaboratorio = document.querySelector("#nome-laboratorio").value;
+   const data = document.querySelector("#data").value;
+   const horario = document.querySelector("#horario").value;
 
-// Adiciona um evento de clique ao botão de agendamento
-btnAgendar.addEventListener("click", function(event) {
-  event.preventDefault();
-
-  // Verifica se o usuário está logado
-  if (!usuarioLogado) {
-    alert("Você precisa estar logado para agendar um laboratório");
-    return;
-  }
-
-  // Obtém os dados do formulário
-  const nomeLaboratorio = document.querySelector("#nome-laboratorio").value;
-  const data = document.querySelector("#data").value;
-  const horario = document.querySelector("#horario").value;
-
-  // Verifica se todos os campos foram preenchidos
-  if (!nomeLaboratorio || !data || !horario) {
-    alert("Por favor, preencha todos os campos");
-    return;
-  }
-
-  // Envia os dados para o servidor
-  // ...
-
-  // Exibe uma mensagem de sucesso
-  alert("Laboratório agendado com sucesso!");
-});
+   // Valida os dados do formulário
+   if (nomeLaboratorio && data && horario) {
+     alert(`Laboratório "${nomeLaboratorio}" agendado para ${data} às ${horario}`);
+   } else {
+     alert("Por favor, preencha todos os campos");
+   }
+ });

@@ -2,17 +2,24 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Login</title>
+  
   </head>
   <body>
-    <form>
-      <h3>Login</h3>
-      <input type="text" placeholder="Usuário" id="username" required />
-      <input type="password" placeholder="Senha" id="password" required />
-      <button type="submit" id="submit">Entrar</button>
+    <form id="form-login">
+      <label>
+        Usuário:
+        <input type="text" id="usuario">
+      </label>
+      <br><br>
+      <label>
+        Senha:
+        <input type="password" id="senha">
+      </label>
+      <br><br>
+      <button type="submit" id="entrar">Entrar</button>
     </form>
-    <script src="script.js"></script>S
+    <script src="script.js"></script>
   </body>
 </html>
